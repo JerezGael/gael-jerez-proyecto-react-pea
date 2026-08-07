@@ -6,17 +6,23 @@ import { Ejercicio5 } from './components/Ejercicio5';
 
 function App() {
   return (
-    <div style={{ maxWidth: '700px', margin: '0 auto', padding: '20px', fontFamily: 'Arial, sans-serif' }}>
-      <h1 style={{ textAlign: 'center' }}>Ejercicios TypeScript - React (PEA)</h1>
-      <hr style={{ marginBottom: '20px' }} />
+    <main style={{ width: '100%' }}>
+      <header style={{ textAlign: 'center', marginBottom: '32px' }}>
+        <h1 style={{ fontSize: '2rem', color: '#f8fafc', marginBottom: '8px' }}>
+          Ejercicios TypeScript - React (PEA)
+        </h1>
+        <p style={{ color: '#64748b', fontSize: '0.95rem' }}>
+          Demostración de lógica y componentes interactivos
+        </p>
+      </header>
 
-      <Ejercicio1 />
-      <Ejercicio2 />
-      <Ejercicio3 />
-      <Ejercicio4 />
-      <Ejercicio5 />
-    </div>
+      <div className="card"><Ejercicio1 /></div>
+      <div className="card"><Ejercicio2 /></div>
+      <div className="card"><Ejercicio3 /></div>
+      <div className="card"><Ejercicio4 /></div>
+      <div className="card"><Ejercicio5 /></div>
+    </main>
   );
 }
 
-export default App;// Commit 1
+export default App;
