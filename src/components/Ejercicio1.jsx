@@ -1,18 +1,16 @@
-import React from 'react';
-
+// Componente para calcular el área de un cuadrado
 export const Ejercicio1 = () => {
-  // Función con parámetros para calcular el área de un cuadrado
-  const calcularAreaCuadrado = (lado) => {
-    return lado * lado;
-  };
-
-  const ladoEjemplo = 5;
+  // Definición del lado del cuadrado en centímetros
+  const lado = 5;
+  
+  // Cálculo de la superficie (fórmula: lado * lado)
+  const area = lado * lado;
 
   return (
-    <div style={{ padding: '15px', border: '1px solid #ddd', borderRadius: '8px', marginBottom: '15px' }}>
+    <div>
       <h3>Ejercicio 1: Área de un Cuadrado</h3>
-      <p>Lado ingresado: <strong>{ladoEjemplo} cm</strong></p>
-      <p>Área calculada: <strong>{calcularAreaCuadrado(ladoEjemplo)} cm²</strong></p>
+      <p>Lado ingresado: <strong>{lado} cm</strong></p>
+      <p>Área calculada: <strong>{area} cm²</strong></p>
     </div>
   );
-};// Commit 2
+};
