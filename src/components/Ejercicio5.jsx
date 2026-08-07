@@ -17,8 +17,8 @@ export const Ejercicio5 = () => {
       <p>Valor actual: <strong>{contador}</strong></p>
 
       <div className="button-group">
-        <button onClick={() => setContador(contador + 1)}>Incrementar</button>
-        <button onClick={() => setContador(contador - 1)}>Decrementar</button>
+        <button onClick={() => setContador(contador + 5)}>Incrementar</button>
+        <button onClick={() => setContador(contador - 5)}>Decrementar</button>
         <button onClick={() => setContador(0)}>Reiniciar</button>
       </div>
     </div>
