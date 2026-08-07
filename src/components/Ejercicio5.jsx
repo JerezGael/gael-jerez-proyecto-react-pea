@@ -26,4 +26,4 @@ export const Ejercicio5 = () => {
       </div>
     </div>
   );
-};
+};// Commit 6
