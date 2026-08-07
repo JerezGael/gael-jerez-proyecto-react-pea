@@ -1,7 +1,6 @@
-// Componente para transformar un arreglo dividiendo sus elementos para 5 (.map)
 export const Ejercicio3 = () => {
-  const numeros = [5, 10, 15, 20, 25, 30, 35, 40, 45, 50];
-  const divididos = numeros.map((num) => num / 5);
+  const arreglo = [5, 10, 15, 20, 25, 30, 35, 40, 45, 50];
+  const divididos = arreglo.map((num) => num / 5);
 
   return (
     <div className="card">
@@ -11,9 +10,9 @@ export const Ejercicio3 = () => {
           alt="División" 
           style={{ width: '36px', height: '36px', objectFit: 'contain' }} 
         />
-        <h3 style={{ margin: 0, borderBottom: 'none', paddingBottom: 0 }}>Ejercicio 3: Dividir Arreglo para 5 (.map)</h3>
+        <h3 style={{ margin: 0 }}>Ejercicio 3: Dividir Arreglo para 5 (.map)</h3>
       </div>
-      <p>Arreglo original: <strong>[{numeros.join(', ')}]</strong></p>
+      <p>Arreglo original: <strong>[{arreglo.join(', ')}]</strong></p>
       <p>Resultado (/ 5): <strong>[{divididos.join(', ')}]</strong></p>
     </div>
   );

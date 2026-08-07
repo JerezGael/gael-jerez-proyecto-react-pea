@@ -1,7 +1,9 @@
-// Componente para sumar los elementos de un arreglo numérico
 export const Ejercicio2 = () => {
+  // Función que recibe un arreglo como parámetro y retorna la suma
+  const sumarArreglo = (arr) => arr.reduce((acum, val) => acum + val, 0);
+
   const numeros = [10, 20, 30, 40, 50];
-  const suma = numeros.reduce((acumulador, actual) => acumulador + actual, 0);
+  const sumaTotal = sumarArreglo(numeros);
 
   return (
     <div className="card">
@@ -11,10 +13,10 @@ export const Ejercicio2 = () => {
           alt="Arreglo" 
           style={{ width: '36px', height: '36px', objectFit: 'contain' }} 
         />
-        <h3 style={{ margin: 0, borderBottom: 'none', paddingBottom: 0 }}>Ejercicio 2: Suma de Elementos de un Arreglo</h3>
+        <h3 style={{ margin: 0 }}>Ejercicio 2: Suma de Elementos de un Arreglo</h3>
       </div>
       <p>Arreglo: <strong>[{numeros.join(', ')}]</strong></p>
-      <p>Suma total: <strong>{suma}</strong></p>
+      <p>Suma calculada (mediante función): <strong>{sumaTotal}</strong></p>
     </div>
   );
 };

@@ -1,7 +1,9 @@
-// Componente para calcular el área de un cuadrado
 export const Ejercicio1 = () => {
+  // Función con parámetros para calcular el área
+  const calcularAreaCuadrado = (lado) => lado * lado;
+
   const lado = 5;
-  const area = lado * lado;
+  const area = calcularAreaCuadrado(lado);
 
   return (
     <div className="card">
@@ -11,10 +13,10 @@ export const Ejercicio1 = () => {
           alt="Cuadrado" 
           style={{ width: '36px', height: '36px', objectFit: 'contain' }} 
         />
-        <h3 style={{ margin: 0, borderBottom: 'none', paddingBottom: 0 }}>Ejercicio 1: Área de un Cuadrado</h3>
+        <h3 style={{ margin: 0 }}>Ejercicio 1: Área de un Cuadrado</h3>
       </div>
       <p>Lado ingresado: <strong>{lado} cm</strong></p>
-      <p>Área calculada: <strong>{area} cm²</strong></p>
+      <p>Área calculada (mediante función): <strong>{area} cm²</strong></p>
     </div>
   );
 };
