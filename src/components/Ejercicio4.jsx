@@ -1,13 +1,11 @@
-// Componente para procesar y renderizar datos de estudiantes
+// Componente para calcular promedio de calificaciones con imagen ilustrativa
 export const Ejercicio4 = () => {
-  // Arreglo de objetos con la información de los alumnos
   const alumnos = [
     { name: 'Viviana', edad: 19, calificacion: 10 },
     { name: 'Wendy', edad: 20, calificacion: 8 },
     { name: 'Gerson', edad: 18, calificacion: 9 },
   ];
 
-  // Función para obtener el promedio con dos decimales usando .reduce()
   const calcularPromedio = (listaAlumnos) => {
     const sumaTotal = listaAlumnos.reduce((acc, alumno) => acc + alumno.calificacion, 0);
     return (sumaTotal / listaAlumnos.length).toFixed(2);
@@ -15,9 +13,11 @@ export const Ejercicio4 = () => {
 
   return (
     <div>
-      <h3>Ejercicio 4: Promedio de Calificaciones de Alumnos</h3>
+      <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '12px' }}>
+        <img src="/images/estudiantes.png" alt="Estudiantes" style={{ width: '36px', height: '36px', objectFit: 'contain' }} />
+        <h3 style={{ margin: 0, borderBottom: 'none', paddingBottom: 0 }}>Ejercicio 4: Promedio de Calificaciones de Alumnos</h3>
+      </div>
       <ul>
-        {/* Renderizado dinámico de la lista de alumnos */}
         {alumnos.map((alumno, index) => (
           <li key={index}>
             <strong>{alumno.name}</strong> ({alumno.edad} años) - Calificación: {alumno.calificacion}
