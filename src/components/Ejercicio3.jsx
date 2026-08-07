@@ -14,4 +14,4 @@ export const Ejercicio3 = () => {
       <p>Resultado (/ 5): <strong>[{arregloDividido.join(', ')}]</strong></p>
     </div>
   );
-};
+};// Commit 4
