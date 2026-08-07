@@ -15,4 +15,4 @@ export const Ejercicio1 = () => {
       <p>Área calculada: <strong>{calcularAreaCuadrado(ladoEjemplo)} cm²</strong></p>
     </div>
   );
-};
+};// Commit 2
