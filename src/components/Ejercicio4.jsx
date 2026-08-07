@@ -39,4 +39,4 @@ export const Ejercicio4 = () => {
       <p>Promedio de calificaciones: <strong>{calcularPromedio(alumnos)}</strong></p>
     </div>
   );
-};
+};// Commit 5
