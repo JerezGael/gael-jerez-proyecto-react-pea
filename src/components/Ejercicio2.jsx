@@ -15,4 +15,4 @@ export const Ejercicio2 = () => {
       <p>Suma total: <strong>{sumarArreglo(numeros)}</strong></p>
     </div>
   );
-};
+};// Commit 3
